@@ -136,12 +136,7 @@ void insert_node_cmd(pnode *head){
         insert_edge = &((*insert_edge)->next);
         
     }
-     pedge edge_to_free = first_edge;
-    while(edge_to_free != NULL){
-        pedge next_edge = edge_to_free->next;
-        free(edge_to_free);
-        edge_to_free = next_edge;
-    }
+
 }
 
 
