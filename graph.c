@@ -102,9 +102,9 @@ void insert_node_cmd(pnode *head){
         }
         node_c->edges = NULL;
     }
-    pedge first_edge=NULL;
+   // pedge first_edge=NULL;
     pedge *insert_edge = &(node_c->edges);
-    first_edge = *insert_edge;
+    //first_edge = *insert_edge;
 
 
     int dest = -1;
