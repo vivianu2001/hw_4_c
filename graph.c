@@ -146,7 +146,7 @@ void delete_node_cmd(pnode *head){
 This function is the same as the one I previously described. It is a function that deletes a specific node from a graph, represented by a linked list of nodes. 
 The function starts by reading an integer value from the user, which represents the node number of the node to be deleted. 
 */
-    int data;
+    int data=-1;
     scanf("%d", &data);
     pnode temp = *head;
     while (temp != NULL) {
