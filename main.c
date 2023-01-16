@@ -20,7 +20,9 @@ int main(){
         else if (c == 'S'){
             int src = -1;
             int dest = -1;
-            scanf("%d, %d\n", &src, &dest);
+            
+            scanf("%d", &src);
+            scanf("%d",&dest);
             int shortest = shortsPath_cmd(*head,src,dest);
             printf("Dijsktra shortest path: %d \n", shortest);
         }
