@@ -190,7 +190,7 @@ The function starts by reading an integer value from the user, which represents 
         }
     }
   // free(temp2);
-    free(next);
+    //free(next);
 }
 
 
