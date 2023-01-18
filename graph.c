@@ -102,7 +102,7 @@ void insert_node_cmd(pnode *head){
         }
         node_c->edges = NULL;
         free(edge_r);
-        free(node_c);
+       // free(node_c);
     }
    // pedge first_edge=NULL;
     pedge *insert_edge = &(node_c->edges);
