@@ -126,6 +126,7 @@ void insert_node_cmd(pnode *head){
             new_node->edges = NULL;
             new_node->next = *head;
             *head = new_node;
+            free(new_node)
         }
         int weight = -1;
         scanf("%d", &weight);
@@ -189,7 +190,7 @@ The function starts by reading an integer value from the user, which represents 
         }
     }
   // free(temp2);
-    //free(next);
+    free(next);
 }
 
 
