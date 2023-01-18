@@ -149,6 +149,14 @@ The function starts by reading an integer value from the user, which represents 
     int data=-1;
     scanf("%d", &data);
     pnode temp = *head;
+    if( (*head)->node_num==data)  //head delete
+    {
+        pnode temp =*head;
+        *head=(*head)->next;
+        free(temp);
+        return;
+    }
+    
     while (temp != NULL) {
         if (temp->edges != NULL &&temp->edges->dest->node_num == data) {  //getting to the node to delete
             pedge edge_to_remove = temp->edges;  ///save the edges of the node
