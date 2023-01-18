@@ -138,7 +138,7 @@ void insert_node_cmd(pnode *head){
         insert_edge = &((*insert_edge)->next);
         
     }
-
+free(*insert_edge);
 }
 
 
