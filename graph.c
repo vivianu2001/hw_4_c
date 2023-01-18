@@ -184,8 +184,8 @@ The function starts by reading an integer value from the user, which represents 
             next = temp2->next;
         }
     }
-    free(temp2);
-    free(next);
+   // free(temp2);
+    //free(next);
 }
 
 
