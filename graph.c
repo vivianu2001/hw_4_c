@@ -99,7 +99,7 @@ void insert_node_cmd(pnode *head){
             pedge temp = edge_r->next;
             free(edge_r);
            edge_r = temp;
-            free(node_c);
+           
             
         }
         node_c->edges = NULL;
