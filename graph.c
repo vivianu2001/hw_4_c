@@ -103,7 +103,7 @@ void insert_node_cmd(pnode *head){
             
         }
         node_c->edges = NULL;
-        free(edge_r);
+    
        // free(node_c);
     }
    // pedge first_edge=NULL;
@@ -173,6 +173,7 @@ The function starts by reading an integer value from the user, which represents 
         temp = temp->next;
     }
     free(temp);
+    
 
     //find the node and delete the node and update the next node current
     pnode temp2 = *head;
@@ -190,8 +191,7 @@ The function starts by reading an integer value from the user, which represents 
             next = temp2->next;
         }
     }
-  // free(temp2);
-    //free(next);
+ 
 }
 
 
