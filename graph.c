@@ -30,6 +30,7 @@ void deleteGraph_cmd(pnode *head){
        free(temp);
     }
     *head=NULL;
+    free(*head);
 }
 
 
