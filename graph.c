@@ -184,7 +184,7 @@ The function starts by reading an integer value from the user, which represents 
     while (next) {
         if (next->node_num == data) {
             temp2->next = next->next;
-            pedge deleege=next->edges;
+            pedge deledge=next->edges;
             while(deledge!=NULL)
             {
                 pedge tmpedge=deledge;
